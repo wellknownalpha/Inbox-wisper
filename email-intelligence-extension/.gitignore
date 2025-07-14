@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+audio/*.mp3
+admin.db
+.DS_Store

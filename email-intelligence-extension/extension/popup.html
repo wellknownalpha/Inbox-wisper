@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 300px; padding: 15px; font-family: Arial, sans-serif; }
+    .section { margin-bottom: 15px; }
+    .section h3 { margin: 0 0 8px 0; font-size: 14px; }
+    input, select, textarea { width: 100%; padding: 5px; margin: 3px 0; box-sizing: border-box; }
+    button { background: #0078d4; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 3px; }
+    button:hover { background: #106ebe; }
+    .checkbox-group { display: flex; flex-wrap: wrap; gap: 5px; }
+    .checkbox-group label { font-size: 12px; display: flex; align-items: center; }
+    .status { padding: 5px; border-radius: 3px; margin: 5px 0; font-size: 12px; }
+    .success { background: #d4edda; color: #155724; }
+    .error { background: #f8d7da; color: #721c24; }
+  </style>
+</head>
+<body>
+  <h2>Email Intelligence</h2>
+  
+  <div class="section">
+    <h3>Email Types</h3>
+    <div class="checkbox-group" id="emailTypes">
+      <label><input type="checkbox" value="newsletter"> Newsletter</label>
+      <label><input type="checkbox" value="updates"> Updates</label>
+      <label><input type="checkbox" value="promotions"> Promotions</label>
+      <label><input type="checkbox" value="notifications"> Notifications</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Summary Type</h3>
+    <select id="summaryType">
+      <option value="headings">Headings Only</option>
+      <option value="brief">Brief</option>
+      <option value="detailed">Detailed</option>
+    </select>
+  </div>
+
+  <div class="section">
+    <h3>Whitelist Senders</h3>
+    <textarea id="whitelistSenders" rows="2" placeholder="Enter emails, one per line"></textarea>
+  </div>
+
+  <div class="section">
+    <h3>Keywords</h3>
+    <input type="text" id="keywords" placeholder="Comma-separated keywords">
+  </div>
+
+  <div class="section">
+    <h3>Domains</h3>
+    <input type="text" id="domains" placeholder="Comma-separated domains">
+  </div>
+
+  <button onclick="saveSettings()">Save Settings</button>
+  <button onclick="openAdmin()">Admin Panel</button>
+  
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

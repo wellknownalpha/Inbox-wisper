@@ -1,0 +1,43 @@
+.ai-summarize-btn {
+  background: #0078d4;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 11px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1000;
+}
+
+.ai-summarize-btn:hover {
+  background: #106ebe;
+}
+
+.ai-summary {
+  background: #f3f2f1;
+  border: 1px solid #edebe9;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.ai-summary h4 {
+  margin: 0 0 8px 0;
+  color: #323130;
+  font-size: 14px;
+}
+
+.ai-summary p {
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.ai-summary audio {
+  width: 100%;
+  height: 30px;
+}
